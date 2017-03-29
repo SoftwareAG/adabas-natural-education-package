@@ -1,0 +1,10 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program Foo.
+/**
+/** :author
+/* TODO Enter your code here
+WRITE "HELLO WORLD"
+END
