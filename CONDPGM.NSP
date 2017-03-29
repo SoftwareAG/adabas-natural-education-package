@@ -1,0 +1,35 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** <h1>Program CONDPGM.</h1>
+/** <p>Natural Training - Example Program</p>
+/** <p>Contents:</p>
+/**     <ul type="square">
+/**         <li>defines + initializes numeric variable</li>  
+/**         <li>writes output depending on value</li>     
+/**        </ul>
+/** <p>New important statements:</p>
+/**     <ul type="square">
+/**         <li>DECIDE ON FIRST ...</li>  
+/**         <li>DISPLAY</li> 
+/**        </ul>
+/** :author Training
+/*
+DEFINE DATA LOCAL
+01 NUMVALUE (N5)  INIT <10>
+01 MESSAGE  (A50)
+END-DEFINE
+*
+DECIDE ON FIRST VALUE OF NUMVALUE
+  VALUES 1 : 3           MOVE "value is 1, 2 or 3"     TO MESSAGE
+  VALUES 5               MOVE "value is 5"             TO MESSAGE
+  VALUES 7 , 8 , 10      MOVE "value is 7, 8 or 10"    TO MESSAGE
+  VALUES 13, 15 : 18     MOVE "value is 13 or in range 15 - 18" TO MESSAGE
+  NONE VALUES            MOVE "value invalid"          TO MESSAGE
+END-DECIDE
+*
+DISPLAY NUMVALUE MESSAGE
+*
+END
+
