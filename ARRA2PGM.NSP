@@ -1,0 +1,97 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** <h1>Program ARRA2PGM</h1>.
+/** <p>Natural Training - Example Program</p>
+/** <p>Contents:</p>
+/**     <ul type="square">
+/**         <li>ARRAY 1 (PRICE1WEEK) Definition and Initialisation (2 Dimensions)</li>     
+/**         <li>ARRAY 2 (PRICE2WEEK) Definition and Initialisation (2 Dimensions)</li>     
+/**         <li>ARRAY 3 (PRICE3WEEK) Definition and Initialisation (2 Dimensions)</li>     
+/**         <li>assign Operations between the arrays</li>     
+/**         <li>diffrent WRITE Operations</li>     
+/**        </ul>
+/** <p>New important statements:</p>
+/**     <ul type="square">
+/**         <li>MOVE with arrays</li>  
+/**         <li>WRITE with arrays</li> 
+/**        </ul>
+/** :author Training
+/*
+DEFINE DATA LOCAL
+01 PRICE1WEEK (N6.2 / 1:5, 1:6) INIT 
+  (1,1) <3000> (1,2) <3500> (1,3) <3900> (1,4) <4200> (1,5) <4050> (1,6) <4150>
+  (2,1) <3250> (2,2) <3750> (2,3) <4150> (2,4) <4450> (2,5) <4300> (2,6) <4400>
+  (3,1) <3300> (3,2) <3800> (3,3) <4200> (3,4) <4500> (3,5) <4650> (3,6) <4800>
+  (4,1) <2800> (4,2) <3300> (4,3) <3700> (4,4) <4000> (4,5) <4150> (4,6) <4250>
+  (5,1) <2400> (5,2) <2900> (5,3) <3300> (5,4) <3600> (5,5) <3750> (5,6) <3850>
+/*
+01 PRICE2WEEK (N6.2 / 1:5, 1:6) 
+01 PRICE3WEEK (N6.2 / 1:5, 1:3) 
+/*
+01 MON-DIM1CNT (N3)           /* Counter Months = Dimension 1
+01 BUN-DIM2CNT (N3)           /* Counter Bunks  = Dimension 2
+01 MONMIN  (N6.2 / 1:6)
+01 MONMAX  (N6.2 / 1:6)
+01 MONAVE  (N6.2 / 1:6)
+01 MONSUM  (N6.2 / 1:6)
+/*
+01 MONCNT (N3)
+/*
+END-DEFINE
+/*
+/* tranfer Table PRICE1WEEK  to Table PRICE2WEEK 
+MOVE PRICE1WEEK(*,*) TO PRICE2WEEK(*,*)
+/*
+/* tranfer Table PRICE1WEEK  to Table PRICE3WEEK for bunc index 2 , 4 , 6
+/*
+MOVE PRICE1WEEK(*,2) TO PRICE3WEEK(*,1)
+MOVE PRICE1WEEK(*,4) TO PRICE3WEEK(*,2)
+MOVE PRICE1WEEK(*,6) TO PRICE3WEEK(*,3)
+/*
+/* write contents of PRICE1WEEK to screen via nested loop
+/*
+* FOR MON-DIM1CNT 1 TO 5
+*    FOR BUN-DIM2CNT 1 TO 6
+*       WRITE  PRICE1WEEK(MON-DIM1CNT,BUN-DIM2CNT)
+*    END-FOR
+* END-FOR
+* /*
+* /* write contents of PRICE2WEEK to screen via nested loop
+* /*
+* FOR MON-DIM1CNT 1 TO 5
+*    FOR BUN-DIM2CNT 1 TO 6
+*       WRITE  PRICE2WEEK(MON-DIM1CNT,BUN-DIM2CNT)
+*    END-FOR
+* END-FOR
+* /*
+* /* write contents of PRICE3WEEK to screen via nested loop
+* /*
+* FOR MON-DIM1CNT 1 TO 5
+*    FOR BUN-DIM2CNT 1 TO 3
+*       WRITE  PRICE3WEEK(MON-DIM1CNT,BUN-DIM2CNT)
+*    END-FOR
+* END-FOR
+/*
+/*
+/* write contents of PRICE1WEEK to screen 
+/*
+WRITE 'Table 1: PRICE1WEEK' /
+PRICE1WEEK (*,1) /  PRICE1WEEK (*,2) /  PRICE1WEEK (*,3) /  
+PRICE1WEEK (*,4) /  PRICE1WEEK (*,5) /  PRICE1WEEK (*,6) / 
+/*
+/* write contents of PRICE2WEEK to screen 
+/*
+WRITE 'Table 2: PRICE2WEEK' /
+PRICE2WEEK (*,1) /  PRICE2WEEK (*,2) /  PRICE2WEEK (*,3) /  
+PRICE2WEEK (*,4) /  PRICE2WEEK (*,5) /  PRICE2WEEK (*,6) / 
+/*
+/*
+/* write contents of PRICE3WEEK to screen 
+/*
+WRITE 'Table 3: PRICE3WEEK' /
+PRICE3WEEK (*,1) /  PRICE3WEEK (*,2) /  PRICE3WEEK (*,3) /  
+/*
+
+END
