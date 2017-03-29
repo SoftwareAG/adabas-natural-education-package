@@ -12,7 +12,7 @@
 - Step 4: Still remember the steps from the video tutorial regarding the usage of Cheatsheets ?!
 
 - Just have a look here to quickly launch the cheatsheets from Eclipse -->
-      - Run the Software AG Designer application on your computer
+      1.    Run the Software AG Designer application on your computer
       - Go to the Eclipse menu `Help` --> `Cheatsheets`
       - Select the `Adabas and Natural Hello World` from the options
       - Work through the steps from the cheatsheet !
