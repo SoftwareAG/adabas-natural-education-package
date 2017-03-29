@@ -2,6 +2,7 @@
 Adabas &amp; Natural Education Package
 A simple step-by-step guide to creating your very first `Hello World` program in Natural programming language environment which is a propreity to Software AG
 plus few more code examples to help you get along with other programming constructs in Natural.
+And we will achieve this understanding through the usage of the Eclipse cheatsheet tutorials.
 
 - Step 1: Watch the following very short video tutorials to help you understand the Cheatsheets usage in Eclipse !
     -   https://youtu.be/mk0-yoIZ1vI    (Part 1)
