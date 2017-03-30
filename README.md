@@ -12,10 +12,9 @@
 - Step 4: Still remember the steps from the video tutorial regarding the usage of Cheatsheets ?!
 
 - Just have a look here how to quickly launch the cheatsheets from Eclipse
-    Run the Software AG Designer application on your computer
-    Go to the Eclipse menu Help > Cheatsheets
-    Select the Composite Cheatsheet from the options menu
-    Work through the steps from the cheatsheet !   
-       
-        And that's it !   
+    1.  Run the Software AG Designer application on your computer
+    2.  Go to the Eclipse menu Help > Cheatsheets
+    3.  Select the Composite Cheatsheet from the options menu
+    4.  Work through the steps from the cheatsheet !       
+      
 - Step 5: End :+1:
