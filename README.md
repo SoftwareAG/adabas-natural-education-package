@@ -14,7 +14,7 @@
 - Just have a look here how to quickly launch the cheatsheets from Eclipse
     1.  Run the Software AG Designer application on your computer
     2.  Go to the Eclipse menu Help > Cheatsheets
-    3.  Select the Composite Cheatsheet from the options menu
+    3.  Select the Adabas and Natural cheatsheets from the options menu
     4.  Work through the steps from the cheatsheet !       
       
 - Step 5: End :+1:
