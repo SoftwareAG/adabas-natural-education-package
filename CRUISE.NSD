@@ -1,0 +1,33 @@
+DB: 012 FILE: 041  - CRUISE                           DEFAULT SEQUENCE:   
+TYPE: ADABAS
+ 
+T L DB Name                              F Leng  S D Remark
+- - -- --------------------------------- - ----  - - ------------------------
+*      >Natural Source Header 000000
+*      :CP
+*      
+*      
+*      :LineIncrement 10
+*      <Natural Source Header
+  1 CI CRUISE-ID                         N  8.0  N D 
+  1 CK CRUISE-STATUS                     A    1  N   
+*      0 = planned, 1 = available, 2 =               
+*      sold, 3 = removed                             
+G 1 CL CRUISE-START                                  
+  2 CM START-DATE                        N  8.0    D 
+  2 CN START-TIME                        N  6.0  N   
+G 1 CO CRUISE-END                                    
+  2 CP END-DATE                          N  8.0  N D 
+  2 CQ END-TIME                          N  6.0  N   
+  1 CR START-HARBOR                      A   20    D 
+  1 CS DESTINATION-HARBOR                A   20    D 
+  1 CT ID-YACHT                          N  8.0  N D 
+*      ID of yacht sailing cruise                    
+G 1 CW PRICES                                        
+  2 CX PRICE-1W                          P 10.3  N   
+*      price for one week                            
+  2 CY PRICE-2W                          P 10.3  N   
+*      price for two weeks                           
+  2 CZ PRICE-3W                          P 10.3  N   
+*      price for three weeks                         
+******DDM OUTPUT TERMINATED******
