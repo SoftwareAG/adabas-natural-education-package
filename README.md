@@ -1,7 +1,7 @@
 # An introduction to Adabas &amp; Natural programming
-## Objective
+## Objective :
 ### To learn how to start the NaturalONE development environment, create your very first `Hello World` program in Natural
-### And we will achieve this understanding through usage of a step-by-step Eclipse tutotirals `Cheatsheets`
+### And we will achieve this understanding through usage of a step-by-step Eclipse tutorials called `Cheatsheets`
 
 - Step 1: Watch the following very short video tutorials to help you understand the Cheatsheets usage in Eclipse !
     -   https://youtu.be/mk0-yoIZ1vI    (Part 1)
