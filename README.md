@@ -11,7 +11,7 @@ Short for "Adabtable Database"-- the Adabas is the Comprehensive and scalable en
 Application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
 
-## Choose from Video tutorial or Try yourself
+## Choose from either watching the Video tutorial or Try yourself
 
 ### Check the video tutorials
 
