@@ -37,8 +37,8 @@ To Start Tutorial
 Please report through an email to UniversityRelations@softwareag.com
 
 
-Notice for updating tutorial html files
------------------------------------------
+### Notice for updating tutorial html files
+
 Please do NOT modify `.html` in github directly.
 
 
