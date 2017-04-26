@@ -2,7 +2,7 @@
 # Adabas and Natural programming tutorial
   
 
-#  Objective
+# Objective
    
 
 ## Adabas
