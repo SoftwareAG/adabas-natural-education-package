@@ -2,9 +2,6 @@
 # Adabas and Natural programming tutorial
   
 
-# Objective
-   
-
 ## Adabas
 
 Short for "Adabtable Database"-- the Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
