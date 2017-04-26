@@ -1,10 +1,6 @@
-===========================
+
 Adabas and Natural Tutorial
 ===========================
-
-.. contents:: Table of Contents
-   :depth: 2
-.. sectnum::
 
 Objective
 =========
@@ -19,12 +15,12 @@ Application development and deployment environment known for ease of-use, cross-
 Choose from Video tutorial or Try yourself
 ==========================================
 
-Check the video tutorials
-=========================
+-  Check the video tutorials
+   =========================
  * Video file attached with this github page
 
-To Start Tutorial
-=================
+-  To Start Tutorial
+   =================
  * Download the Software AG Designer/Virtual machine ISO file from the TECHcommunity website
  * Run the 'Adabas and Natural' cheatsheets from Help menu
 
