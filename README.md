@@ -13,7 +13,6 @@ Application development and deployment environment known for ease of-use, cross-
 
 ### Choose from Video tutorial or Try yourself
 
-
 -  Check the video tutorials
    =========================
  * Video file attached with this github page
