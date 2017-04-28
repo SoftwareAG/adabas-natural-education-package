@@ -36,7 +36,7 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
     - Retrieval of data from database
  
 ### To explore more code samples....
-  - (http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/)
+  http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
  
 ### System Environment Requirement
 
