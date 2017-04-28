@@ -47,16 +47,12 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
   
 
 ### If You Find Issues
-
 Please report through an email to UniversityRelations@softwareag.com
 
 
-### Notice for updating tutorial html files
-
-Please do NOT modify files here, if you are not authorized to.
-
-
 ### Notice
+This tutorial only serves the purpose of introducing the concept of Adabas and Natural at a basic level of understanding
 
-This tutorial only serves the purpose of introducing the concept of Adabas and Natural at a basic level of understanding 
 
+### Notice for updating tutorial html files
+Please do NOT modify files here, if you are not authorized to.
