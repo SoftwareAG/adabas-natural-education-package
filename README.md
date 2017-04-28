@@ -26,12 +26,12 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
  
  * Download the Virtual machine image file from the TECHcommunity website
  * Run the 'Adabas and Natural' cheatsheets from Help menu
- * 3 scenarios discussed in Natural
+ * 3 scenarios discussed in understanding of the Natural programming language
  
     - Hello World
     - Conditional constructs
     - Basic Array manipulation
- * 1 scenario discussed in Adabas
+ * 1 scenario discussed in understanding of the Adabas
  
     - Retrieval of data from database
  
