@@ -26,17 +26,20 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
  
  * Download the Virtual machine image file from the TECHcommunity website
  * Run the 'Adabas and Natural' cheatsheets from Help menu
- * 3 scenarios discussed through the cheatsheets
+ * 3 scenarios discussed in Natural
+ 
     - Hello World
     - Conditional constructs
     - Basic Array manipulation
-
+ * 1 scenario discussed in Adabas
+ 
+    - Retrieval of data from database
  
 ### System Environment Requirement
 
  * Internet access
  * Windows 7 or higher
- * Adabas and Software AG pre-installed (provided as VM image)
+ * Adabas and Software AG designer (modules) pre-installed (provided as VM image)
  
   
 
