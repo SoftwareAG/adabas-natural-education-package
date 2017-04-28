@@ -23,7 +23,7 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
  * Video file attached with this github page
 
 #### To tryout yourself
- * OR
+ 
  * Download the Virtual machine image file from the TECHcommunity website
  * Run the 'Adabas and Natural' cheatsheets from Help menu
 
