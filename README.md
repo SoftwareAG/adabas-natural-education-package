@@ -27,9 +27,9 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
  * Download the Virtual machine image file from the TECHcommunity website
  * Run the 'Adabas and Natural' cheatsheets from Help menu
  * 3 scenarios discussed through the cheatsheets
-  - Hello World
-  - Conditional constructs
-  - Basic Array manipulation
+    - Hello World
+    - Conditional constructs
+    - Basic Array manipulation
 
  
 ### System Environment Requirement
