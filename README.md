@@ -35,6 +35,9 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
  
     - Retrieval of data from database
  
+### To explore more code samples....
+  - http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
+ 
 ### System Environment Requirement
 
  * Internet access
