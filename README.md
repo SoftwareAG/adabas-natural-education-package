@@ -6,14 +6,14 @@
 
 Short for "Adabtable Database"-- the Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
-More information here: http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx
+More information here: (http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx)
 
 
 ## Natural programming language
 
 Application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
-More information here: http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx
+More information here: (http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx)
 
 
 ## Choose from either watching the Video tutorial or Try yourself
@@ -36,7 +36,7 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
     - Retrieval of data from database
  
 ### To explore more code samples....
-  - http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
+  - (http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/)
  
 ### System Environment Requirement
 
