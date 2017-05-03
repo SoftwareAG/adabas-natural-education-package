@@ -26,21 +26,21 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
  * Run the 'Adabas and Natural' cheatsheets from Help menu
  * The 3 scenarios discussed here, in understanding of the Natural programming language are...
  
-    - Hello World
+    - <b>Hello World</b>
       * <b>Description</b> : One of the many ways you can print your text/results on the screen is through the usage of the WRITE "string" statement
-    - Conditional constructs
-      * Description : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. Here, the FIRST keyword indicates that only the first value is to be processed with the NUMVALUE variable being initialised to 10. And therefore, based on the value contained in the NUMVALUE, an appropriate message is to be printed on the console, which is achieved through the usage of the DISPLAY statement here.
+    - <b>Conditional constructs</b>
+      * </b>Description</b> : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. Here, the FIRST keyword indicates that only the first value is to be processed with the NUMVALUE variable being initialised to 10. And therefore, based on the value contained in the NUMVALUE, an appropriate message is to be printed on the console, which is achieved through the usage of the DISPLAY statement here.
         
-    - Basic Array manipulation
-      * Description : This program illustrates the usage of the definition, initialisation, copy-to-another-array and print to the console operations.
+    - <b>Basic Array manipulation</b>
+      * <b>Description</b> : This program illustrates the usage of the definition, initialisation, copy-to-another-array and print to the console operations.
          * Definition and initialisation of three 2-dimentional arrays.
          * Movement of the data from one array into another.
          * Two approaches to print the whole of the 2-dimensional arrays onto the console:
             * through nested loop
             * without the usage of the nested loop
         
-   - For Adabas : Retrieval of data from the database and print it on the screen
-       * Description : This program shows an example of retrieval of data from the database
+   - <b>Adabas</b> : Retrieval of data from the database and print it on the screen
+       * <b>Description</b> : This program shows an example of retrieval of data from the database
        * You would need to first, compile the data definition module CRUISE.NSD which contains the data fields 
        * The main program HISTOPGM.NSP would compute the total number of records in the Adabas file CRUISE for a specific START-HARBOR
        * Usage of REPEAT statement to initiate a processing loop, the exit condition for the loop would be a blank value for the START-HARBOR
