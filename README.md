@@ -29,7 +29,7 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
     - Hello World
       * Description : One of the many ways you can print your text/results on the console is through the usage of the WRITE "string" statement
     - Conditional constructs
-      * Decription : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. Here, the FIRST keyword indicates that only the first value is to be processed with the NUMVALUE variable being initialised to 10. And therefore, based on the value contained in the NUMVALUE, an appropriate message is to be printed on the console, which is achieved through the usage of the DISPLAY statement here.
+      * Description : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. Here, the FIRST keyword indicates that only the first value is to be processed with the NUMVALUE variable being initialised to 10. And therefore, based on the value contained in the NUMVALUE, an appropriate message is to be printed on the console, which is achieved through the usage of the DISPLAY statement here.
         
     - Basic Array manipulation
       * Description : This program illustrates the usage of the definition, initialisation, copy-to-another-array and print to the console operations.
@@ -39,8 +39,10 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
             * through nested loop
             * without the usage of the nested loop
         
- * 1 scenario discussed in understanding of the Adabas 
-    - Retrieval of data from database
+   - 1 scenario discussed in the understanding of Adabas 
+     * Description: Retrieval of data from database
+       * You would need to first, compile the CRUISE.NSD file -contains the data definitions
+       * The main program to take the input from the user, then retrieve and print the corresponding value from the database
  
 ### To explore more code samples....
   http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
