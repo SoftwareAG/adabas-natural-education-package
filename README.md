@@ -39,8 +39,7 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
             * through nested loop
             * without the usage of the nested loop
         
-   - 1 scenario discussed in the understanding of Adabas 
-     * Description: Retrieval of data from database
+   - For Adabas : Retrieval of data from the database and print it on the screen
        * You would need to first, compile the CRUISE.NSD file -contains the data definitions
        * The main program to take the input from the user, then retrieve and print the corresponding value from the database
  
