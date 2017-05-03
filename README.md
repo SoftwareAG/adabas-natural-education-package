@@ -16,7 +16,7 @@ Application development and deployment environment known for ease of-use, cross-
 http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx
 
 
-## Choose from either watching the Video tutorial or Try yourself
+## Hello World ! in Natural
 ~~Upload the video tutorial~~
 ### Check the video tutorials
 
@@ -24,13 +24,16 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
 
 #### To tryout yourself
  
- * Download the Virtual machine image file from the TECHcommunity website
+ * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
  * 3 scenarios discussed in understanding of the Natural programming language
  
     - Hello World
+      * Description :
     - Conditional constructs
+      * Decription :
     - Basic Array manipulation
+      * Description :
  * 1 scenario discussed in understanding of the Adabas
  
     - Retrieval of data from database
