@@ -27,9 +27,9 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
  * 3 scenarios discussed in understanding of the Natural programming language
  
     - Hello World
-      * Description : You can print your text/results on the console using the WRITE "string" statement in your code
+      * Description : One of the many ways you can print your text/results on the console is through the usage of the WRITE "string" statements
     - Conditional constructs
-      * Decription : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. The FIRST keyword indicates that only the first value is to be processed.
+      * Decription : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. Here, the FIRST keyword indicates that only the first value is to be processed with the NUMVALUE variable being initialised to 10. And therefore, based on the value contained in the NUMVALUE, an appropriate message is to be printed on the console, which is achieved through the usage of the DISPLAY statement here.
         
     - Basic Array manipulation
       * Description :
