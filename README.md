@@ -19,19 +19,18 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
 ## Hello World ! in Natural
 ~~Upload the video tutorial~~
 ### Check the video tutorials
-
  * Video file attached with this github page
 
-#### To tryout yourself
- 
+#### To tryout yourself 
  * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
  * 3 scenarios discussed in understanding of the Natural programming language
  
     - Hello World
-      * Description :
+      * Description : You can print your text/results on the console using the WRITE "string" statement in your code
     - Conditional constructs
-      * Decription :
+      * Decription : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. The FIRST keyword indicates that only the first value is to be processed.
+        
     - Basic Array manipulation
       * Description :
  * 1 scenario discussed in understanding of the Adabas
