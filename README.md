@@ -21,7 +21,7 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
 ### Check the video tutorials
  * Video file attached with this github page
 
-#### To tryout yourself 
+### To tryout yourself 
  * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
  * The 3 scenarios discussed here, in understanding of the Natural programming language are...
@@ -40,6 +40,7 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
             * without the usage of the nested loop
         
    - For Adabas : Retrieval of data from the database and print it on the screen
+       * Description : This program shows an example of retrieval of data from the database
        * You would need to first, compile the data definition module CRUISE.NSD which contains the data fields 
        * The main program HISTOPGM.NSP would compute the total number of records in the Adabas file CRUISE for a specific START-HARBOR
        * Usage of REPEAT statement to initiate a processing loop, the exit condition for the loop would be a blank value for the START-HARBOR
@@ -62,7 +63,3 @@ Please report through an email to UniversityRelations@softwareag.com
 
 ### Notice
 This tutorial only serves the purpose of introducing the concept of Adabas and Natural at a basic level of understanding
-
-
-### Notice for updating tutorial html files
-Please do NOT modify files here, if you are not authorized to.
