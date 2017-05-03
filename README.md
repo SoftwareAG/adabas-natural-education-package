@@ -40,8 +40,10 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
             * without the usage of the nested loop
         
    - For Adabas : Retrieval of data from the database and print it on the screen
-       * You would need to first, compile the CRUISE.NSD file -contains the data definitions
-       * The main program to take the input from the user, then retrieve and print the corresponding value from the database
+       * You would need to first, compile the data definition module CRUISE.NSD which contains the data fields 
+       * The main program HISTOPGM.NSP would compute the total number of records in the Adabas file CRUISE for a specific START-HARBOR
+       * Usage of REPEAT statement to initiate a processing loop, the exit condition for the loop would be a blank value for the START-HARBOR
+       * Usage of ESCAPE statement to interrupt the linear flow of execution and exit the loop
  
 ### To explore more code samples....
   http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
