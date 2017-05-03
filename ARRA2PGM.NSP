@@ -17,7 +17,7 @@
 /**         <li>MOVE with arrays</li>  
 /**         <li>WRITE with arrays</li> 
 /**        </ul>
-/** :author Training
+/**
 /*
 DEFINE DATA LOCAL
 01 PRICE1WEEK (N6.2 / 1:5, 1:6) INIT 
