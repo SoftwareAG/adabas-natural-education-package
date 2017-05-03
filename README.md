@@ -24,7 +24,7 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
 ### To tryout yourself 
  * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
- * The 3 scenarios discussed here, in understanding of the Natural programming language are...
+ * Explanation for the programs presented in the cheatsheets:
  
     - <b>Hello World</b>
       * <b>Description</b> : One of the many ways you can print your text/results on the screen is through the usage of the WRITE "string" statement
