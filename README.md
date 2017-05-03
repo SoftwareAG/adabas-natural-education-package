@@ -4,7 +4,7 @@
 
 ## Adabas
 
-Short for "Adabtable Database"-- the Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
+Short for "Adabtable Database"-- Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
 http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx
 
