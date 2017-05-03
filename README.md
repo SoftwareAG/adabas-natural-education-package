@@ -1,19 +1,19 @@
 
-# Adabas and Natural programming tutorial 
+# An introduction to Adabas and Natural programming
 ![alt text](https://cloud.githubusercontent.com/assets/25740455/25524035/259ecbf2-2c09-11e7-877b-585666f26d3f.png)
 
 ## Adabas
 
 Short for "Adabtable Database"-- Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
-http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx
+More information here: http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx
 
 
 ## Natural programming language
 
 Application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
-http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx
+More information here: http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx
 
 
 ## Hello World ! in Natural
@@ -53,8 +53,7 @@ http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.asp
 
  * Internet access
  * Windows 7 or higher
- * Adabas and Software AG designer (modules) pre-installed (provided as VM image)
- 
+ * Adabas and Software AG designer (modules) pre-installed (provided as VM image) 
   
 
 ### If You Find Issues
