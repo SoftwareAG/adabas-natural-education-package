@@ -4,24 +4,23 @@
 
 ## Adabas
 
-Short for "Adabtable Database"-- Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
+Short for "Adabtable Database"-- Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. It is available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
 More information here: http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx
 
 
 ## Natural programming language
 
-Application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. Available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
+It is used in application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. It is as well available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
 More information here: http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx
 
 
 ## Hello World ! in Natural
 ~~Upload the video tutorial~~
-### Check the video tutorials
- * Video file attached with this github page
+Now you can either have the option to check out our video tutorials  ~~here~~ or you try it out yourself by downloading the virtual machine ~~here~~
 
-### To tryout yourself 
+### Steps to using the virtual machine 
  * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
  * Explanation for the programs presented in the cheatsheets:
@@ -47,7 +46,7 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
        * Usage of ESCAPE statement to interrupt the linear flow of execution and exit the loop
  
 ### To explore more code samples....
-  http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
+  simply head over to the TECHcommunity... http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
  
 ### System Environment Requirement
 
