@@ -17,7 +17,6 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
 
 
 ## Hello World ! in Natural
-~~Upload the video tutorial~~
 Now you can either have the option to check out our video tutorials  ~~here~~ or you try it out yourself by downloading the virtual machine ~~here~~
 
 ### Steps to using the virtual machine 
