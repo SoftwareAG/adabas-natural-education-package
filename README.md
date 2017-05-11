@@ -15,7 +15,7 @@ More information here: http://www2.softwareag.com/corporate/products/adabas_natu
 
 
 ## Hello World ! in Natural
-Now you can either have the option to check out our video tutorials  ~~here~~ or you try it out yourself by downloading the virtual machine ~~here~~
+Now you can check our Step-by-step tutorial in PDF (attached NaturalONECheatSheetsTutorial.pdf) and then try it out yourself by downloading the virtual machine ~~here~~
 
 ### Steps to using the virtual machine 
  * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
