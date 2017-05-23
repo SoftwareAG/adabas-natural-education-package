@@ -4,14 +4,10 @@
 
 Short for "Adabtable Database"-- Adabas is the Comprehensive and scalable enterprise database management system optimized for big data and designed for reliability and high performance. It is available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
-More information here: http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx
 
-
-## Natural programming language
+## [Natural programming language](http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx)
 
 It is used in application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. It is as well available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
-
-More information here: http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx
 
 
 ## Hello World ! in Natural
