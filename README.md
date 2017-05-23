@@ -1,4 +1,4 @@
-![alt text](https://cloud.githubusercontent.com/assets/25740455/25938714/7f4c321c-3630-11e7-9dca-db5877727731.jpg)(http://www2.softwareag.com/de/products/adabas_natural/default.aspx)
+![alt text](https://cloud.githubusercontent.com/assets/25740455/25938714/7f4c321c-3630-11e7-9dca-db5877727731.jpg)
 
 ## Adabas
 
