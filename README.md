@@ -9,10 +9,6 @@ Short for "Adabtable Database"-- Adabas is the Comprehensive and scalable enterp
 
 It is used in application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. It is as well available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
-
-## Hello World ! in Natural
-Now you can check our Step-by-step tutorial in PDF (attached NaturalONECheatSheetsTutorial.pdf) and then try it out yourself by downloading the virtual machine ~~here~~
-
 ### Steps to using the virtual machine 
  * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
@@ -20,6 +16,7 @@ Now you can check our Step-by-step tutorial in PDF (attached NaturalONECheatShee
  
     - <b>First program: Hello World !</b>
       * <b>Description</b> : One of the many ways you can print your text/results on the screen is through the usage of the WRITE "string" statement
+      
     - <b>Second program: Conditional constructs</b>
       * <b>Description</b> : The DECIDE ON statement is used to specify multiple actions to be performed depending on the value (or values) contained in a variable. Here, the FIRST keyword indicates that only the first value is to be processed with the NUMVALUE variable being initialised to 10. And therefore, based on the value contained in the NUMVALUE, an appropriate message is to be printed on the console, which is achieved through the usage of the DISPLAY statement here.
         
