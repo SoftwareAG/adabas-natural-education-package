@@ -12,7 +12,7 @@ It is used in application development and deployment environment known for ease 
 ### Steps to using the virtual machine 
  * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
- * Explanation for the programs presented in the cheatsheets:
+ * Tutorials :
  
     - <b>First program: Hello World !</b>
       * <b>Description</b> : One of the many ways you can print your text/results on the screen is through the usage of the WRITE "string" statement
