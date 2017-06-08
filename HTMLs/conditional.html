@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Adabas and Natural tutorials</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+		<section id="body" class="width">
+			<aside id="sidebar" class="column-left">
+			<header>
+				<h1><a href="#">Adabas & Natural</a></h1>
+				<h2>Welcome to the learning!</h2>			
+			</header>
+			<nav id="mainnav">
+  				<ul>
+                            		<li><a href="index.html">Home</a></li>
+									<li><a href="Excheatsheets.html">Eclipse Cheatsheets</a></li>
+									<li><a href="hello.html">Natural Hello World</a></li>
+                            		<li class="selected-item"><a href="conditional.html">Natural Conditional</a></li>
+                            		<li><a href="arrays.html">Natural Arrays</a></li>
+                </ul>
+			</nav>			
+			</aside>
+			<section id="content">                		
+	    <article>
+				<h2>What are conditional statements?</h2>
+				<blockquote><p>The execution of conditional statements depends on some condition and one example is an IF statement, where you define a logical condition, and the execution of the statement attached to the IF statement then depends on that condition.</p></blockquote>
+				<code>Like so: IF SALARY LT 40000 THEN</code>
+				<blockquote><p>The IF statment contains three components:</p></blockquote>
+				<blockquote>IF  : In the IF clause, you specify the logical condition which is to be met.</blockquote>
+				<blockquote>THEN: Here you specify the statement(s) to be executed if this condition is to be met.</blockquote>
+				<blockquote>ELSE: Here you specify the statement(s) to be executed if this condition is not to be met. Something like :</blockquote>
+				<code>IF condition <br> THEN execute statement(s) <br> ELSE execute other statement(s) <br>END-IF</code>
+				<h3>Simple IF statement examples...</h3>
+				<code>
+				***********************************************************************<br>
+				DEFINE DATA LOCAL<br>
+				1 MYVIEW VIEW OF EMPLOYEES<br>
+				  2 NAME<br>
+				  2 BIRTH<br>
+				  2 CITY<br>
+				  2 SALARY (1:1)<br>
+				END-DEFINE<br>
+				*<br>
+				LIMIT 7<br>
+				READ MYVIEW BY CITY STARTING FROM 'C'<br>
+				 IF SALARY (1) LT 40000 THEN<br>
+					WRITE NOTITLE '*****' NAME 30X 'SALARY LT 40000'<br>
+				  ELSE<br>
+					DISPLAY NAME BIRTH (EM=YYYY-MM-DD) SALARY (1)<br>
+				  END-IF<br>
+				END-READ<br>
+				END<br>
+				************************************************************************<br>
+				</code>					
+				<h4>Explanation...</h4>
+				<ol>					
+					<li>IF the salary is less than 40000, THEN the WRITE statement is to be executed;</li>					
+					<li>otherwise (ELSE), that is, if the salary is more than 40000 or more, the DISPLAY statement is to be executed</li>
+				</ol>
+				<h3>Output of above code:</h3>
+				<img src="Capture1.PNG" style="width:500px; height:300px"/>
+				<br>
+				<h3>Example 2:</h3>
+				<img src="Capture3.PNG" style="width:500px; height:500px"/>
+				
+				<h3>Output of Example 2:</h3>
+				<img src="Capture4.PNG" style="width:400px; height:400px"/>
+		
+				<h3>Nested IF Statements</h3>
+				<blockquote><p>It is possible to use various nested IF statements; for example, you can make the execution of a THEN clause dependent on another IF statement which you specify in the THEN clause.</p></blockquote>
+									
+				<h3>Example 1:</h3>
+				<img src="CaptureNestedIF.PNG" style="width:500px; height:600px"/>
+				
+				<h3>Output of Example above:</h3>
+				<img src="CaptureNestedIFOutput.PNG" style="width:500px; height:400px"/>
+				
+		</article>
+			<footer>
+				<p>&copy; 2017 <a href="http://www2.softwareag.com/de/default.aspx">Software AG.</a></p>
+			</footer>
+		</section>
+		<div class="clear"></div>
+	</section>
+</body>
+</html>
