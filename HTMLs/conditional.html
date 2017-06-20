@@ -12,7 +12,7 @@
 			<aside id="sidebar" class="column-left">
 			<header>
 				<h1><a href="#">Adabas & Natural</a></h1>
-				<h2>Welcome to the learning!</h2>			
+				<h2>Welcome to the learning!</h2>		
 			</header>
 			<nav id="mainnav">
   				<ul>
@@ -22,9 +22,9 @@
                             		<li class="selected-item"><a href="conditional.html">Natural Conditional</a></li>
                             		<li><a href="arrays.html">Natural Arrays</a></li>
                 </ul>
-			</nav>			
+			</nav>
 			</aside>
-			<section id="content">                		
+			<section id="content">
 	    <article>
 				<h2>What are conditional statements?</h2>
 				<blockquote><p>The execution of conditional statements depends on some condition and one example is an IF statement, where you define a logical condition, and the execution of the statement attached to the IF statement then depends on that condition.</p></blockquote>
@@ -34,7 +34,7 @@
 				<blockquote>THEN: Here you specify the statement(s) to be executed if this condition is to be met.</blockquote>
 				<blockquote>ELSE: Here you specify the statement(s) to be executed if this condition is not to be met. Something like :</blockquote>
 				<code>IF condition <br> THEN execute statement(s) <br> ELSE execute other statement(s) <br>END-IF</code>
-				<h3>Simple IF statement examples...</h3>
+				<h3>Simple IF statement examples...Example 1:</h3>
 				<code>
 				***********************************************************************<br>
 				DEFINE DATA LOCAL<br>
@@ -51,32 +51,122 @@
 					WRITE NOTITLE '*****' NAME 30X 'SALARY LT 40000'<br>
 				  ELSE<br>
 					DISPLAY NAME BIRTH (EM=YYYY-MM-DD) SALARY (1)<br>
-				  END-IF<br>
+				END-IF<br>
 				END-READ<br>
 				END<br>
 				************************************************************************<br>
-				</code>					
+				<input id="1" name="Open file" type="button" value="Open in new window" onclick="OpenFile()"/>
+				<script language="JavaScript">
+					function OpenFile() {
+					window.open('https://github.com/SoftwareAG-UniversityRelations/ANEP/blob/master/HTMLs/Example1.NSP');
+					}
+				</script>
+									
+				</code>
+				
 				<h4>Explanation...</h4>
 				<ol>					
 					<li>IF the salary is less than 40000, THEN the WRITE statement is to be executed;</li>					
 					<li>otherwise (ELSE), that is, if the salary is more than 40000 or more, the DISPLAY statement is to be executed</li>
 				</ol>
-				<h3>Output of above code:</h3>
+				<h3>Output:</h3>
 				<img src="Capture1.PNG" style="width:500px; height:300px"/>
 				<br>
 				<h3>Example 2:</h3>
-				<img src="Capture3.PNG" style="width:500px; height:500px"/>
+				<pre>
+				************************************************************************
+				DEFINE DATA LOCAL
+				1 EMPLOY-VIEW VIEW OF EMPLOYEES
+				  2 NAME
+				  2 CITY
+				  2 BONUS  (1,1)
+				  2 SALARY (1)
+				*
+				1 #INCOME  (N9)
+				1 #TEXT    (A26)
+				END-DEFINE
+				*
+				WRITE TITLE '-- DISTRIBUTION OF CATALOGS I AND II --' /
+				*
+				READ (3) EMPLOY-VIEW BY CITY = 'SAN FRANSISCO'
+				  COMPUTE #INCOME = BONUS(1,1) + SALARY(1)
+				  /*
+				 IF #INCOME > 40000
+					MOVE 'CATALOGS I AND II' TO #TEXT
+				  ELSE
+					MOVE 'CATALOG I'         TO #TEXT
+				  END-IF
+				  /*
+				  DISPLAY NAME 5X 'SALARY' SALARY(1) / BONUS(1,1)
+				  WRITE T*SALARY '-'(10) /
+						16X 'INCOME:' T*SALARY #INCOME 3X #TEXT /
+						16X '='(19)
+				  SKIP 1
+				END-READ
+				END
+				************************************************************************
+				<input id="3" name="Open file" type="button" value="Open in new window" onclick="goToURL()"/>
+				<script language="JavaScript">
+					function goToURL() {
+					window.open('https://raw.githubusercontent.com/SoftwareAG-UniversityRelations/ANEP/master/HTMLs/Example1.NSP');
+					}
+				</script>
 				
-				<h3>Output of Example 2:</h3>
+				</pre>
+				
+				
+				<h3>Output:</h3>
 				<img src="Capture4.PNG" style="width:400px; height:400px"/>
 		
 				<h3>Nested IF Statements</h3>
 				<blockquote><p>It is possible to use various nested IF statements; for example, you can make the execution of a THEN clause dependent on another IF statement which you specify in the THEN clause.</p></blockquote>
 									
-				<h3>Example 1:</h3>
-				<img src="CaptureNestedIF.PNG" style="width:500px; height:600px"/>
+				<h3>Example 3:</h3>
+				<pre>
+				************************************************************************
+				DEFINE DATA LOCAL
+				1 MYVIEW VIEW OF EMPLOYEES
+				  2 NAME
+				  2 CITY
+				  2 SALARY (1:1)
+				  2 BIRTH
+				  2 PERSONNEL-ID
+				1 MYVIEW2 VIEW OF VEHICLES
+				  2 PERSONNEL-ID
+				  2 MAKE
+				*
+				1 #BIRTH   (D)
+				END-DEFINE
+				*
+				MOVE EDITED '19450101' TO #BIRTH (EM=YYYYMMDD)
+				*
+				LIMIT 20
+				FND1. FIND MYVIEW WITH CITY = 'BOSTON'
+								  SORTED BY NAME
+				 IF SALARY (1) LESS THAN 20000
+					WRITE NOTITLE '*****' NAME 30X 'SALARY LT 20000'
+				  ELSE
+					IF BIRTH GT #BIRTH
+					  FIND MYVIEW2 WITH PERSONNEL-ID = PERSONNEL-ID (FND1.)
+						DISPLAY (IS=ON) NAME BIRTH (EM=YYYY-MM-DD)
+										SALARY (1) MAKE (AL=8 IS=OFF)
+					  END-FIND
+					END-IF
+				  END-IF
+				  SKIP 1
+				END-FIND
+				END
+				************************************************************************
+				<input id="5" name="Open file" type="button" value="Open in new window" onclick="Open()"/>
+				<script language="JavaScript">
+					function Open() {
+					window.open('https://raw.githubusercontent.com/SoftwareAG-UniversityRelations/ANEP/master/HTMLs/Example1.NSP');
+					}
+				</script>
 				
-				<h3>Output of Example above:</h3>
+				</pre>
+				
+				<h3>Output:</h3>
 				<img src="CaptureNestedIFOutput.PNG" style="width:500px; height:400px"/>
 				
 		</article>
