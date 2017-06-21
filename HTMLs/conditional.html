@@ -12,7 +12,7 @@
 			<aside id="sidebar" class="column-left">
 			<header>
 				<h1><a href="#">Adabas & Natural</a></h1>
-				<h2>Welcome to the learning!</h2>		
+				<h2>Welcome to the learning!</h2>
 			</header>
 			<nav id="mainnav">
   				<ul>
@@ -21,6 +21,7 @@
 									<li><a href="hello.html">Natural Hello World</a></li>
                             		<li class="selected-item"><a href="conditional.html">Natural Conditional</a></li>
                             		<li><a href="arrays.html">Natural Arrays</a></li>
+									<li><a href="retrieval.html">Adabas Retrieval from Database</a></li>
                 </ul>
 			</nav>
 			</aside>
@@ -28,13 +29,51 @@
 	    <article>
 				<h2>What are conditional statements?</h2>
 				<blockquote><p>The execution of conditional statements depends on some condition and one example is an IF statement, where you define a logical condition, and the execution of the statement attached to the IF statement then depends on that condition.</p></blockquote>
-				<code>Like so: IF SALARY LT 40000 THEN</code>
-				<blockquote><p>The IF statment contains three components:</p></blockquote>
-				<blockquote>IF  : In the IF clause, you specify the logical condition which is to be met.</blockquote>
-				<blockquote>THEN: Here you specify the statement(s) to be executed if this condition is to be met.</blockquote>
-				<blockquote>ELSE: Here you specify the statement(s) to be executed if this condition is not to be met. Something like :</blockquote>
-				<code>IF condition <br> THEN execute statement(s) <br> ELSE execute other statement(s) <br>END-IF</code>
-				<h3>Simple IF statement examples...Example 1:</h3>
+				<img src="IF.PNG" style="width:400px; height:400px"/>				
+				<blockquote><p>Note: If no action is to be performed in case the condition is met, you must specify the statement IGNORE in the THEN clause.</p></blockquote>
+				<br>
+				<h3>Syntax Description</h3>
+				<table>
+				  <tr>
+					<th>Syntax Element</th>
+					<th>Description</th>					
+				  </tr>
+				  <tr>
+					<td><b>IF logical-condition</b></td>
+					<td>Logical Condition Criterion:
+					The logical condition which is used to determine whether the statement or statements specified with the IF statement are to be executed.
+
+					<p>Examples:</p>
+					<pre>
+					IF #A = #B
+					IF LEAVE-TAKEN GT 30
+					IF #SALARY(1) * 1.15 GT 5000
+					IF SALARY (4) = 5000 THRU 6000
+					IF DEPT = 'A10' OR = 'A20' OR = 'A30'
+					</pre>
+					</td>					
+				  </tr>
+				  <tr>
+					<td><b>THEN statement</b></td>
+					<td>THEN Clause:
+					In the THEN clause, you specify the statement(s) to be executed if the logical condition is true.
+					</td>					
+				  </tr>
+				  <tr>
+					<td><b>ELSE statement</b></td>
+					<td>ELSE Clause:
+					In the ELSE clause, you specify the statement(s) to be executed if the logical condition is not true.
+					</td>					
+				  </tr>
+				  <tr>
+					<td><b>END-IF</b></td>
+					<td>END of IF Statement:
+					In structured mode, the Natural reserved word END-IF must be used to end the IF statement.
+					</td>					
+				  </tr>				  
+				</table>				
+				<br><br>
+				<h3>Few examples with their outputs...Example 1:</h3>
 				<code>
 				***********************************************************************<br>
 				DEFINE DATA LOCAL<br>
@@ -73,38 +112,39 @@
 				<img src="Capture1.PNG" style="width:500px; height:300px"/>
 				<br>
 				<h3>Example 2:</h3>
-				<pre>
+				<code>
 				************************************************************************
-				DEFINE DATA LOCAL
-				1 EMPLOY-VIEW VIEW OF EMPLOYEES
-				  2 NAME
-				  2 CITY
-				  2 BONUS  (1,1)
-				  2 SALARY (1)
-				*
-				1 #INCOME  (N9)
-				1 #TEXT    (A26)
-				END-DEFINE
-				*
-				WRITE TITLE '-- DISTRIBUTION OF CATALOGS I AND II --' /
-				*
-				READ (3) EMPLOY-VIEW BY CITY = 'SAN FRANSISCO'
-				  COMPUTE #INCOME = BONUS(1,1) + SALARY(1)
-				  /*
-				 IF #INCOME > 40000
-					MOVE 'CATALOGS I AND II' TO #TEXT
-				  ELSE
-					MOVE 'CATALOG I'         TO #TEXT
-				  END-IF
-				  /*
-				  DISPLAY NAME 5X 'SALARY' SALARY(1) / BONUS(1,1)
-				  WRITE T*SALARY '-'(10) /
-						16X 'INCOME:' T*SALARY #INCOME 3X #TEXT /
-						16X '='(19)
-				  SKIP 1
-				END-READ
-				END
-				************************************************************************
+				DEFINE DATA LOCAL<br>
+				1 EMPLOY-VIEW VIEW OF EMPLOYEESv
+				  2 NAME<br>
+				  2 CITY<br>
+				  2 BONUS  (1,1)<br>
+				  2 SALARY (1)<br>
+				*<br>
+				1 #INCOME  (N9)<br>
+				1 #TEXT    (A26)<br>
+				END-DEFINE<br>
+				*<br>
+				WRITE TITLE '-- DISTRIBUTION OF CATALOGS I AND II --' /<br>
+				*<br>
+				READ (3) EMPLOY-VIEW BY CITY = 'SAN FRANSISCO'<br>
+				  COMPUTE #INCOME = BONUS(1,1) + SALARY(1)<br>
+				  /*<br>
+				 IF #INCOME > 40000<br>
+					MOVE 'CATALOGS I AND II' TO #TEXT<br>
+				  ELSE<br>
+					MOVE 'CATALOG I'         TO #TEXT<br>
+				  END-IF<br>
+				  /*<br>
+				  DISPLAY NAME 5X 'SALARY' SALARY(1) / BONUS(1,1)<br>
+				  WRITE T*SALARY '-'(10) /<br>
+						16X 'INCOME:' T*SALARY #INCOME 3X #TEXT /<br>
+						16X '='(19)<br>
+				  SKIP 1<br>
+				END-READ<br>
+				END<br>
+				************************************************************************<br>
+				</code>
 				<input id="3" name="Open file" type="button" value="Open in new window" onclick="goToURL()"/>
 				<script language="JavaScript">
 					function goToURL() {
@@ -122,41 +162,42 @@
 				<blockquote><p>It is possible to use various nested IF statements; for example, you can make the execution of a THEN clause dependent on another IF statement which you specify in the THEN clause.</p></blockquote>
 									
 				<h3>Example 3:</h3>
-				<pre>
-				************************************************************************
-				DEFINE DATA LOCAL
-				1 MYVIEW VIEW OF EMPLOYEES
-				  2 NAME
-				  2 CITY
-				  2 SALARY (1:1)
-				  2 BIRTH
-				  2 PERSONNEL-ID
-				1 MYVIEW2 VIEW OF VEHICLES
-				  2 PERSONNEL-ID
-				  2 MAKE
-				*
-				1 #BIRTH   (D)
-				END-DEFINE
-				*
-				MOVE EDITED '19450101' TO #BIRTH (EM=YYYYMMDD)
-				*
-				LIMIT 20
-				FND1. FIND MYVIEW WITH CITY = 'BOSTON'
-								  SORTED BY NAME
-				 IF SALARY (1) LESS THAN 20000
-					WRITE NOTITLE '*****' NAME 30X 'SALARY LT 20000'
-				  ELSE
-					IF BIRTH GT #BIRTH
-					  FIND MYVIEW2 WITH PERSONNEL-ID = PERSONNEL-ID (FND1.)
-						DISPLAY (IS=ON) NAME BIRTH (EM=YYYY-MM-DD)
-										SALARY (1) MAKE (AL=8 IS=OFF)
-					  END-FIND
-					END-IF
-				  END-IF
-				  SKIP 1
-				END-FIND
-				END
-				************************************************************************
+				<code>
+				************************************************************************<br>
+				DEFINE DATA LOCAL<br>
+				1 MYVIEW VIEW OF EMPLOYEES<br>
+				  2 NAME<br>
+				  2 CITY<br>
+				  2 SALARY (1:1)<br>
+				  2 BIRTH<br>
+				  2 PERSONNEL-ID<br>
+				1 MYVIEW2 VIEW OF VEHICLES<br>
+				  2 PERSONNEL-ID<br>
+				  2 MAKE<br>
+				*<br>
+				1 #BIRTH   (D)<br>
+				END-DEFINE<br>
+				*<br>
+				MOVE EDITED '19450101' TO #BIRTH (EM=YYYYMMDD)<br>
+				*<br>
+				LIMIT 20<br>
+				FND1. FIND MYVIEW WITH CITY = 'BOSTON'<br>
+								  SORTED BY NAME<br>
+				 IF SALARY (1) LESS THAN 20000<br>
+					WRITE NOTITLE '*****' NAME 30X 'SALARY LT 20000'<br>
+				  ELSE<br>
+					IF BIRTH GT #BIRTH<br>
+					  FIND MYVIEW2 WITH PERSONNEL-ID = PERSONNEL-ID (FND1.)<br>
+						DISPLAY (IS=ON) NAME BIRTH (EM=YYYY-MM-DD)<br>
+										SALARY (1) MAKE (AL=8 IS=OFF)<br>
+					  END-FIND<br>
+					END-IF<br>
+				  END-IF<br>
+				  SKIP 1<br>
+				END-FIND<br>
+				END<br>
+				************************************************************************<br>
+				</code>
 				<input id="5" name="Open file" type="button" value="Open in new window" onclick="Open()"/>
 				<script language="JavaScript">
 					function Open() {
