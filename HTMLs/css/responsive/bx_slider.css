@@ -1,0 +1,39 @@
+/* content /comment/ rotation */
+.bx-wrapper{
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px;
+    max-width: 1150px;
+    box-sizing: border-box;}
+    
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+  background-size: 25% auto;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 45px;
+  width: 45px;
+	text-indent: -9999px;
+	z-index:0;
+}
+.bx-wrapper .bx-prev{left: 0; background-color: #d7d7d7; background-image: url('/images/bkg/left_arrow_slide_white.png'); }
+.bx-wrapper .bx-next{right: 10px; background-color: #d7d7d7; background-image: url('/images/bkg/right_arrow_slide_white.png');}
+
+/* ARROWS FOR LOGOS ROTATION */
+.rotate_logos .bx-wrapper .bx-prev{left: -10px; background-color: transparent; background-image: url('/images/bkg/left_arrow_logos.png');background-size: auto auto;}
+.rotate_logos .bx-wrapper .bx-next{right: -10px; background-color: transparent; background-image: url('/images/bkg/right_arrow_logos.png'); background-size: auto auto;}
+.rotate_logos .bx-wrapper .bx-viewport{height: 90px !important;}
+
+.bkg_light_grey .bx-wrapper .bx-prev,
+.bkg_blue .bx-wrapper .bx-prev,
+.bkg_grey  .bx-wrapper .bx-prev,
+.bkg_dark_grey .bx-wrapper .bx-prev{background-color: #fff; background-image: url('/images/bkg/left_arrow_slide.png');}
+
+.bkg_light_grey .bx-wrapper .bx-next,
+.bkg_blue .bx-wrapper .bx-next,
+.bkg_grey .bx-wrapper .bx-next,
+.bkg_dark_grey .bx-wrapper .bx-next{background-color: #fff; background-image: url('/images/bkg/right_arrow_slide.png');}

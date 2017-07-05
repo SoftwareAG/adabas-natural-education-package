@@ -1,0 +1,61 @@
+/* header part */
+.header{width:100%;min-height: 55px;margin: 0 auto;z-index: 100;position: fixed;top: 0;background: #fff;}
+.header .logo{ float: left;}
+.logo img{border: 0 none;}
+strong{font-weight: 600;}
+/* top navigation and social media navi*/
+.navis{max-width: 1150px;margin: 0 auto;padding: 25px 0 0 0;overflow: hidden;}
+ .moveTop{margin-top: 180px;}
+/* wrapper for nav and selectors */
+.nav_wrapper{width: 1150px;margin: 0 auto;position: relative;}
+/* search and drop down selectors */
+.selectors{position: absolute;right: 0;bottom: 55px;}
+/* contact us button in the header */
+.selectors .contact{text-decoration: none;color: #fff;font-weight: bold;text-transform: uppercase;font-size: 13px;background-color: #83BB00;border-radius: 30px;padding: 3px 16px;float: left;border: 2px solid #83BB00;margin: 20px 0 0 0;transition: all 0.4s;}
+.selectors .second_btn{text-decoration: none;color: #fff;font-weight: bold;text-transform: uppercase;font-size: 13px;background-color: #0899cc;border: 2px solid #0899cc;border-radius: 60px;padding: 3px 16px;float: left;margin: 20px 14px 0 0;transition: all 0.4s;} 
+.selectors .contact:hover{background-color: #fff;color: #83BB00;}
+.selectors .second_btn:hover{background-color: #fff;color: #0899cc; }
+ /* search button */
+.search_holder{float: left;margin-top: 20px;height: 30px;width: 32px;}
+.search_holder img{float: right;cursor: pointer;} 
+.search_holder .search_box{padding: 15px;background: #efefef;display: none;position: absolute;top: 60px;right: 0;z-index: 5;width: 400px;}
+.search_holder .search_box input{width: 350px;height: 25px;background: #fff;border: 1px solid #ccc;border-radius: 5px;}
+.search_holder .search_box input.search{float: right;width: 15px !important;background: url('/images/bkg/go_btn.png') no-repeat right center;border: 0 none;}  
+.lang_wrap{margin: 20px 15px 0 15px;height: 30px;width: 32px;float: left;}
+.lang_wrap .active_flag{ cursor: pointer;}
+.lang{border: none;width: auto;background: #fff;color: #b9b9b9;font-size: 14px;font-family: "Avenir Book", Arial;display: none;position: absolute;right: 0;width: 510px;top: 60px;border: 1px solid #cecece;z-index:3;}
+.lang a{color: #333;float: left;width: 33%;padding: 10px;text-decoration: none;}
+/* navigation */
+.nav{margin: 0 auto;clear: both;padding: 15px 0;position: relative;}
+#desktop_menu {width: 1150px;}
+/* breadcrumb navigation */
+ul.breadcrumb{max-width: 1150px;overflow: hidden;margin: -10px auto 10px auto;padding: 10px 0 0 0;border-top: 1px solid #e5e5e5;}
+ul.breadcrumb li{ float: left;}
+ul.breadcrumb li a{font-size: 14px;text-decoration: none;color: #888;padding: 0 15px 0 0;display: inline-block;}
+ul.breadcrumb li a:after {content: "\3E";padding: 0 0 0 15px;}
+ul.breadcrumb li:last-child a:after{content: '';}
+ul.breadcrumb li a.active, ul.breadcrumb li a:hover{color: #0899cc;}
+/* hidden elements for mobile navigation */
+#menu{ display:none; }                     
+.click{ display: none;}
+/* footer */
+.footer{position: relative;width: 100%;background: #333;padding: 30px 0;overflow: hidden;}
+.footer .tab_nodes li{margin: 0 20px 0 0;}
+.footer .tab_nodes li a{background-color: #7b7b7b;padding: 10px 30px;display: inline-block;color: #000;text-transform: uppercase;font-size: 20px;text-decoration: none;}
+.footer .tab_nodes li.ui-tabs-active a, footer .tab_nodes li a:hover{background-color: #fff;color: #000;}
+.footer .tab_nodes{border-bottom: 2px solid #fff;padding-left: 20px;margin-bottom: 20px;float: left;width: 100%;}
+.footer .panel{color: #fff;padding: 0 30px;overflow: hidden;position: relative;}
+.footer .panel ul{float: left;margin: 0;padding: 0;width: 25%;list-style-type: none;}
+.footer .panel ul li a{color: #ababab;font-size: 16px;display: inline-block;margin: 0 0 7px 0;text-decoration: none;}
+.footer .panel ul li a:hover{text-decoration: underline;}
+.footer .panel ul li h4{color: #fff;font-size: 19px;margin: 0 0 20px 0;}    
+/* socila media in the footer and copy links */
+.footer_bottomline{margin-top: 40px;font-size: 14px;padding: 40px 0;border-top: 1px solid #757575;color: #e3e3e3;}
+.footer_bottomline ul{list-style-type: none;margin: 0;padding: 0;}
+.footer_bottomline ul li{float: left;margin: 0 15px 0 0;}
+.footer_bottomline ul li a{ color: #e3e3e3; text-decoration: none;}
+.footer_bottomline ul li a:hover{text-decoration: underline;}
+.footer_bottomline ul.f_links li{margin-top: 10px;}
+.footer_bottomline ul.f_social{float: right; }
+.footer_bottomline ul.f_social li.social_title{display: none; }
+.footer_bottomline ul.f_social li:last-child{margin: 0;}

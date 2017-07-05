@@ -1,0 +1,111 @@
+/* big banner area */
+          
+.swiper-container{
+    background-color: #f2f2f2;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 445px;
+  }
+
+.swiper-container .swiper-wrapper .copy{
+    width: 1140px;
+    z-index: 1;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    padding: 40px 0 0 0;
+  }
+  
+.swiper-container .swiper-wrapper h2,
+.swiper-container .swiper-wrapper h3,
+.swiper-container .swiper-wrapper h1{       
+    color: #333;
+    clear: both;
+    float: left;
+    margin: 5px 0;  
+    font-size: 36px;
+    line-height: 36px;}
+    
+.swiper-container .swiper-wrapper h2,
+.swiper-container .swiper-wrapper h1{font-family: "Avenir Black",Arial; }
+    
+.swiper-container .swiper-wrapper h3,
+.swiper-container .swiper-wrapper h1.subttl{ margin: 0 0 40px 0; font-family: "Avenir Light", Arial;}
+.swiper-container .swiper-wrapper .description{
+  clear: both;
+  float: left;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+  margin-bottom: 20px;
+  }
+
+.swiper-container .swiper-wrapper .swiper-slide.center,
+.swiper-container .swiper-wrapper .swiper-slide.center .copy,
+.swiper-container .swiper-wrapper .swiper-slide.center h1,
+.swiper-container .swiper-wrapper .swiper-slide.center h1.subttl,
+.swiper-container .swiper-wrapper .swiper-slide.center .description{display: block; text-align: center; float: none; width: 100%; margin-left:0;} 
+
+.swiper-container .swiper-wrapper .swiper-slide.center .banner_btn{float: none;}
+
+.swiper-container .swiper-slide{
+        background-position: top center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        min-height: 335px;
+        }
+.swiper-container .swiper-slide img {z-index: 0; }
+ 
+.banner_btn{
+    background: #0899CC none repeat scroll 0 0;
+    border: 2px solid #079ace;
+    border-radius: 10px 0;
+    color: #fff;
+    display: inline-table;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 5px;
+    padding: 10px 40px;
+    text-decoration: none;
+    text-transform: none;
+    clear: both;
+    float: left;
+  }
+  
+.banner_btn:hover{
+  background-color: #fff;
+  border-color: #ccc;
+  color: #0899CC; }
+  
+.banner_btn.reverse{
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 10px 0;
+    color: #0899CC;
+    display: inline-table;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 5px;
+    padding: 10px 40px;
+    text-decoration: none;
+    text-transform: none;
+    clear: both;
+    float: left;
+  }
+
+.banner_btn.reverse:hover{
+    background-color: #0899CC;
+    border-color: #079ace;
+    color: #fff; }
+
+.swiper-pagination-bullet{
+  height: 13px !important;
+  width: 13px !important;
+  background: transparent !important;
+  opacity: 0.8 !important;
+  border: 2px solid #fff;}
+
+.swiper-pagination-bullet-active{background: #fff !important;}

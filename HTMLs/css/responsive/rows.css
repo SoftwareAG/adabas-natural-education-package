@@ -1,0 +1,83 @@
+/* solutions rows */
+
+.row_blocks_intro{
+  padding: 0 0 70px 0;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+ }
+ 
+.row_blocks_intro h3{
+  color: #00a1df;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "Avenir Black", Arial, sans serif;
+  margin: 3px 0;
+  }
+.row_blocks_intro h2{
+  color: #000;
+  font-size: 42px;
+  line-height: 42px;
+  margin: 3px 0;}
+  
+.row_blocks_intro .row_intro{
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Avenir book", Arial, sans serif;
+  padding: 20px 0 0 0;
+  }
+  
+.row_blocks .row{
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0 40px 0;
+  clear: both;
+  display: inline-block;
+  text-align: left;}
+
+.row_blocks .row:last-child{
+  border-bottom: 0 none;}
+
+.row_node{
+  width: 50%;
+  padding: 5px;
+  float: left;
+  box-sizing: border-box;
+  }
+
+.row_node strong{
+  font-size: 25px;
+  }
+  
+.row_node p strong,
+.row_node p{font-size: 15px; margin: 3px 0;}
+
+.row_node img{
+  float: left;
+  margin: 0 25px 0 0;
+  }
+
+.row_node .node_txt{
+  float: right;
+  width: 70%;
+  }
+
+.row_blocks .exp_btn{
+  display: none;
+  }
+.row_blocks .exp_btn.act{
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #00a1df;
+  background: #00a1df;
+  }
+  
+.row_blocks .exp_info{
+  display: none;
+  text-align: center;
+  padding: 10px 0;
+  }
+.row_blocks .exp_info strong{display: block;}
+.row_blocks .exp_info img{
+  width: 130px;
+  float: none;}
+.row_blocks .exp_info a.action{text-align: left;}

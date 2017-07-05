@@ -64,9 +64,9 @@ a:focus {
 	outline:none;
 }
 a.button { 
-    background-color: #80B763;
+    background-color: #8a2be2;	
     border-radius: 5px;
-    color: #FFFFFF;
+    color: white;
     display: inline-block;
     font-weight: bold;
     padding: 8px 22px;
@@ -81,7 +81,8 @@ a.button-reversed {
 }
 
 a.button:hover {
-	background-color: #669D48;
+	background-color: white;
+	color: #8a2be2;
 }
 
 a.button-reversed:hover {
@@ -114,7 +115,7 @@ fieldset form input, fieldset form select, fieldset form textarea {
 }
 fieldset form input.formbutton {
 border:none;
-    background-color: #80B763;
+    background-color:#80B763;
     border-radius: 5px;
     color: #FFFFFF;
     display: inline-block;
@@ -129,16 +130,18 @@ border:none;
 }
 h1 {
 	font-size:2.4em;
+	font-family:"Avenir Book",Arial,Helvetica,Verdana,sans-serif;
 }
 h2 {
-	color:#2f2f2f;
+	color:black;
 	font-size:1.8em;
 	font-weight:bold;
+	font-family:"Avenir Book",Arial,Helvetica,Verdana,sans-serif;
 	padding:0 0 5px;
 	margin:0;
 }
 h3 {
-	color:#80B763;
+	color:#8a2be2;
 	font-size:1.6em;
 	padding-bottom:10px;
 }
@@ -188,15 +191,15 @@ header h1 {
 header h1 a,
 header h1 a:hover,
 header h1 a:visited {
-	color: #fff;
+	color: #8a2be2;
 	font-size: 1.5em;
 	text-decoration: none;
 	letter-spacing:-2px;
 }
 
 header h2 {
-	color:#C4DDB6;
-	text-align: right;
+	color:#8a2be2;
+	text-align: center;
 	font-size: 0.8em;
 	font-weight: normal;
 	padding-bottom:0;
@@ -207,7 +210,7 @@ header h2 {
 /** body **/
 section#body {
 	padding: 0;
-	background: #80B763;
+	background: #fff;
 }
 
 
@@ -215,7 +218,7 @@ section#body {
 section#content {
 	margin-left: 250px;
 	padding: 20px;
-	background-color: #fff;
+	background-color: white;
 }
 .column-left {
 	float:left;
@@ -235,25 +238,26 @@ nav#mainnav ul {
 
 nav#mainnav li {
 	padding:0;
-	border-bottom: 1px solid #99C581;
-	border-top: 1px solid #6FAB4F;
+	/*border-bottom: 1px solid #99C581;
+	border-top: 1px solid #6FAB4F;*/
 }
 nav#mainnav li.selected-item  {
 	border-bottom:none;
 }
 nav#mainnav li.selected-item a,
 nav#mainnav li.selected-item a:hover {
-	color:#80B763;
+	color:white;	
 	font-weight:bold;
-	background: #fff;
+	background: black;
 }
-nav#mainnav li a:hover {
-	background:#669D48;
-	color: #fff;
+nav#mainnav li a:hover {	
+	background:black;
+	color:white;	
 	text-decoration:none;
 }
 nav#mainnav li a {
 	color: #f0f0f0;
+	color:blue;
 	display: block;
 	padding: 15px 17px;
 	text-align: right;
@@ -267,20 +271,22 @@ nav#mainnav li a {
 article {
     padding: 10px 10px 30px;
 	font-size: 1.2em;
-border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	font-family:"Avenir Book",Arial,Helvetica,Verdana,sans-serif;
+	color:black;
  }
 
 article h2 {
     padding-bottom: 0;
 	line-height: 1.1em;
 	letter-spacing: -2px;
-   font-size: 2.5em;
+	font-size: 2.5em;	
 }
 
 article .article-info {
   color: #C0c0c0;
-font-size: 0.92em;
-padding: 0px 0px 10px;
+  font-size: 0.92em;
+  padding: 0px 0px 10px;
 }
 
 article .article-info a { 
