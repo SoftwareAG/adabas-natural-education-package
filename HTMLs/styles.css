@@ -4,7 +4,7 @@
 body {
 	margin:0px auto;
 	padding:0;
-	background: #222;
+	background: #222;	
 	font-family: "Source Sans Pro","sans-serif";
 	font-size: 1.0em;
 	color:#666;
@@ -64,7 +64,8 @@ a:focus {
 	outline:none;
 }
 a.button { 
-    background-color: #8a2be2;	
+    background-color: #8a2be2;
+	background-color:#0899CC;
     border-radius: 5px;
     color: white;
     display: inline-block;
@@ -83,6 +84,7 @@ a.button-reversed {
 a.button:hover {
 	background-color: white;
 	color: #8a2be2;
+	color:#0899CC;
 }
 
 a.button-reversed:hover {
@@ -125,8 +127,6 @@ border:none;
     letter-spacing: 0.25px;
     text-decoration: none;
     text-transform: uppercase;
-
-
 }
 h1 {
 	font-size:2.4em;
@@ -142,6 +142,7 @@ h2 {
 }
 h3 {
 	color:#8a2be2;
+	color:#0899CC;
 	font-size:1.6em;
 	padding-bottom:10px;
 }
@@ -192,6 +193,7 @@ header h1 a,
 header h1 a:hover,
 header h1 a:visited {
 	color: #8a2be2;
+	color:#0899CC;
 	font-size: 1.5em;
 	text-decoration: none;
 	letter-spacing:-2px;
@@ -199,6 +201,7 @@ header h1 a:visited {
 
 header h2 {
 	color:#8a2be2;
+	color:#0899CC;
 	text-align: center;
 	font-size: 0.8em;
 	font-weight: normal;
@@ -248,16 +251,18 @@ nav#mainnav li.selected-item a,
 nav#mainnav li.selected-item a:hover {
 	color:white;	
 	font-weight:bold;
-	background: black;
+	background:#0899CC;
 }
 nav#mainnav li a:hover {	
 	background:black;
+	background:#0899CC;
 	color:white;	
 	text-decoration:none;
 }
 nav#mainnav li a {
 	color: #f0f0f0;
 	color:blue;
+	color:#0899CC;
 	display: block;
 	padding: 15px 17px;
 	text-align: right;
@@ -277,6 +282,7 @@ article {
  }
 
 article h2 {
+	color:#0899CC;
     padding-bottom: 0;
 	line-height: 1.1em;
 	letter-spacing: -2px;
