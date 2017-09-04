@@ -10,7 +10,7 @@ Short for "Adabtable Database"-- Adabas is the Comprehensive and scalable enterp
 It is used in application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. It is as well available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
 ### Steps to using the virtual machine 
- * Download the Virtual machine image file from the TECHcommunity website (~~URL~~)
+ * Download the Virtual machine image file from the TECHcommunity website (the link will be added in the near future)
  * Run the 'Adabas and Natural' cheatsheets from Help menu
  * Tutorials :
  
