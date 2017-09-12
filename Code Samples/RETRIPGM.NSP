@@ -1,0 +1,21 @@
+/*( imported data fields from Data Definition Module CRUISE
+     DEFINE DATA LOCAL
+     1 CRUISEVIEW VIEW OF CRUISE
+       2 CRUISE-ID (N8.0)
+       2 START-DATE (N8.0)
+       2 REDEFINE START-DATE
+         3 START-YEAR (N4)
+       2 END-DATE (N8.0)
+       2 REDEFINE END-DATE
+         3 END-YEAR (N4)
+       2 START-HARBOR (A20)
+       2 DESTINATION-HARBOR (A20)
+       2 PRICE-1W (P10.3)
+    /*) imported data fields from Data Definition Module CRUISE
+    1 INCPERCENT (N3) CONST<5>
+    1 INCYEAR    (N1) CONST<1>
+    END-DEFINE
+	*
+     READ (20) CRUISEVIEW BY CRUISE-ID
+     PRINT CRUISEVIEW
+    *
