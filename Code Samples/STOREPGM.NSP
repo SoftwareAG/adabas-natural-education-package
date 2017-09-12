@@ -1,0 +1,92 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** <h1>Program STORETPGM.</h1>
+/** <p>Natural Training - Example Program</p>
+/** <p>Contents:</p>
+/**     <ul type="square">
+/**         <li>Define views for CRUISE AND CRUISE2</li>
+/**         <li>read CRUISE reocord by CRUISE-ID</li>
+/**         <li>change name of DESTINATION-HARBOR for Skiatos</li>
+/**         <li>increase price PRICE-1W 5%</li>
+/**         <li>change year of START-DATE increasing it one year</li>
+/**         <li>change year of END-DATE increasing it one year</li>
+/**         <li>transfer data of CRUISEVIEW TO CRUISE2VIEW</li>
+/**         <li>store record for CRUISE2VIEW</li>
+/**         <li>close read loop</li>
+/**      </ul>
+/** <p>New important statements:</p>
+/**     <ul type="square">
+/**         <li>STORE</li>  
+/**         <li>END TRANSACTION</li> 
+/**        </ul>
+/** :author Training
+/* TODO Enter your code here
+/*
+DEFINE DATA LOCAL
+/*
+1 CRUISEVIEW VIEW OF CRUISE
+  2 CRUISE-ID (N8.0)
+  2 CRUISE-STATUS (A1)
+  2 CRUISE-START
+    3 START-DATE (N8.0)
+    3 REDEFINE START-DATE
+      4 START-DATEYYYY (N4)
+    3 START-TIME (N6.0)
+  2 CRUISE-END
+    3 END-DATE (N8.0)
+    3 REDEFINE END-DATE
+      4 END-DATEYYYY (N4)
+    3 END-TIME (N6.0)
+  2 START-HARBOR (A20)
+  2 DESTINATION-HARBOR (A20)
+  2 ID-YACHT (N8.0)
+  2 PRICES
+    3 PRICE-1W (P10.3)
+    3 PRICE-2W (P10.3)
+    3 PRICE-3W (P10.3)
+/*
+1 CRUISE2VIEW VIEW OF CRUISE2
+  2 CRUISE-ID (N8.0)
+  2 CRUISE-STATUS (A1)
+  2 CRUISE-START
+    3 START-DATE (N8.0)
+    3 START-TIME (N6.0)
+  2 CRUISE-END
+    3 END-DATE (N8.0)
+    3 END-TIME (N6.0)
+  2 START-HARBOR (A20)
+  2 DESTINATION-HARBOR (A20)
+  2 ID-YACHT (N8.0)
+  2 PRICES
+    3 PRICE-1W (P10.3)
+    3 PRICE-2W (P10.3)
+    3 PRICE-3W (P10.3)
+/*) imported data fields from Data Definition Module CRUISE
+1 INCYEAR            (N1) CONST<1>
+1 INCPRICEPERCENT    (N1) CONST<5>
+END-DEFINE
+/*
+R2. READ CRUISEVIEW BY CRUISE-ID
+*
+  IF CRUISEVIEW.DESTINATION-HARBOR = "Skiatos"
+    MOVE "Naxos" TO CRUISEVIEW.DESTINATION-HARBOR
+  END-IF
+*
+  COMPUTE  CRUISEVIEW.PRICE-1W = CRUISEVIEW.PRICE-1W
+    + ( CRUISEVIEW.PRICE-1W * INCPRICEPERCENT  / 100 )
+  COMPUTE  CRUISEVIEW.START-DATEYYYY = CRUISEVIEW.START-DATEYYYY
+    + INCYEAR
+  COMPUTE  CRUISEVIEW.END-DATEYYYY = CRUISEVIEW.END-DATEYYYY
+    + INCYEAR
+*
+  MOVE BY NAME CRUISEVIEW TO CRUISE2VIEW
+*
+  STORE CRUISE2VIEW
+*
+END-READ
+*
+END TRANSACTION
+*
+END

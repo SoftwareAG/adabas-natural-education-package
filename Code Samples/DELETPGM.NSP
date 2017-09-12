@@ -1,0 +1,31 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** <h1>Program DELETPGM.</h1>
+/** <p>Natural Training - Example Program</p>
+/** <p>Contents:</p>
+/**     <ul type="square">
+/**         <li>deletes all records from CRUISE2</li> 
+/**         <li>new important Statements:</li>
+/**         <li>DELETE</li>  
+/**         <li>END TRANSACTION</li> 
+/**        </ul>
+/** :author Training
+/* TODO Enter your code here
+/*
+DEFINE DATA LOCAl
+1 CRUISE2VIEW VIEW OF CRUISE2
+1 RECCOUNT (N5)
+END-DEFINE
+/* delete all records from CRUISE2
+R1. READ CRUISE2VIEW
+  DELETE
+  COMPUTE RECCOUNT = RECCOUNT + 1
+END-READ
+*
+END TRANSACTION
+*
+WRITE 'OK - all records deleted in CRUISE2:' RECCOUNT
+*
+END

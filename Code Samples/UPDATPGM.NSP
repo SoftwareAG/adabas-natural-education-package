@@ -1,0 +1,79 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** <h1>Program UPDATPGM.</h1>
+/** <p>Natural Training - Example Program</p>
+/** <p>Contents:</p>
+/**     <ul type="square">
+/**        <li> Define view for CRUISE2</li>
+/**        <li> read CRUISE2 reocords by CRUISE-ID</li>
+/**        <li> when 10 record read, provoke error (price division by 0) (option)</li>
+/**        <li> change name of DESTINATION-HARBOR for Skiatos</li>
+/**        <li> increase price PRICE-1W 5%</li>
+/**        <li> change year of START-DATE increasing it one year</li>
+/**        <li> change year of END-DATE increasing it one year</li>
+/**        <li> update record for CRUISE2VIEW</li>
+/**        <li> end transaction (option 2)</li>
+/**        <li> close read loop</li>
+/**        <li> end transaction (option 1)</li>
+/**      </ul>
+/** <p>New important statements:</p>
+/**     <ul type="square">
+/**         <li>UPDATE</li>  
+/**         <li>END TRANSACTION</li> 
+/**        </ul>
+/** :author Training
+/* TODO Enter your code here
+/*
+DEFINE DATA LOCAL
+/*
+1 CRUISE2VIEW VIEW OF CRUISE2
+  2 CRUISE-ID (N8.0)
+  2 CRUISE-STATUS (A1)
+  2 CRUISE-START
+    3 START-DATE (N8.0)
+    3 REDEFINE START-DATE
+      4 START-DATEYYYY (N4)
+    3 START-TIME (N6.0)
+  2 CRUISE-END
+    3 END-DATE (N8.0)
+    3 REDEFINE END-DATE
+      4 END-DATEYYYY (N4)
+    3 END-TIME (N6.0)
+  2 START-HARBOR (A20)
+  2 DESTINATION-HARBOR (A20)
+  2 ID-YACHT (N8.0)
+  2 PRICES
+    3 PRICE-1W (P10.3)
+    3 PRICE-2W (P10.3)
+    3 PRICE-3W (P10.3)
+/*) imported data fields from Data Definition Module CRUISE
+1 INCYEAR            (N1) CONST<1>
+1 READCOUNT          (N3)
+1 READERRCOUNT       (N3) CONST<10>
+END-DEFINE
+*
+R1. READ CRUISE2VIEW BY CRUISE-ID
+*
+  COMPUTE READCOUNT = READCOUNT + 1
+  IF READCOUNT = READERRCOUNT  /* provoke error
+    COMPUTE CRUISE2VIEW.PRICE-1W = CRUISE2VIEW.PRICE-1W / 0
+  END-IF
+*
+  IF CRUISE2VIEW.DESTINATION-HARBOR = "Skiatos"
+    MOVE "Naxos" TO DESTINATION-HARBOR
+  END-IF
+  COMPUTE  CRUISE2VIEW.START-DATEYYYY = CRUISE2VIEW.START-DATEYYYY
+    + INCYEAR
+  COMPUTE  CRUISE2VIEW.END-DATEYYYY = CRUISE2VIEW.END-DATEYYYY
+    + INCYEAR
+*
+  UPDATE
+*
+* END TRANSACTION  /* Option 2
+END-READ
+*
+END TRANSACTION  /* Option 1
+*
+END
