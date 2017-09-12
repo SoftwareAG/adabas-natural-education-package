@@ -1,0 +1,29 @@
+DB: 012 FILE: 042  - YACHT                            DEFAULT SEQUENCE:   
+TYPE: ADABAS
+ 
+T L DB Name                              F Leng  S D Remark
+- - -- --------------------------------- - ----  - - ------------------------
+*      >Natural Source Header 000000
+*      :CP
+*      
+*      
+*      :LineIncrement 10
+*      <Natural Source Header
+  1 DB YACHT-ID                          N  8.0  N D 
+  1 DC YACHT-NAME                        A   30  N D 
+  1 DD YACHT-TYPE                        A   30  N D 
+  1 DF LENGTH                            P  3.2  N   
+*      in meters                                     
+  1 DG WIDTH                             P  3.2  N   
+*      in meters                                     
+  1 DH DRAFT                             P  3.2  N   
+*      in meters                                     
+  1 DI SAIL-SURFACE                      P  3.0  N   
+*      in square meters                              
+  1 DJ MOTOR                             P  3.0  N   
+*      output in HP                                  
+  1 DK HEAD-ROOM                         P  3.2  N   
+*      headroom in saloon in meters                  
+  1 DL BUNKS                             P  3.0  N   
+*      number of bunks                               
+******DDM OUTPUT TERMINATED******
