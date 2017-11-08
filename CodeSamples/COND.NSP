@@ -1,0 +1,10 @@
+DEFINE DATA LOCAL
+1 SALARY (N10) INIT <40000>
+END-DEFINE
+
+IF SALARY LT 40000 THEN                             
+    DISPLAY 'Salary is less than 40000'         
+  ELSE                                                       
+    DISPLAY 'Salary is equal to or more than 40000'                                                                     
+  END-IF
+END
