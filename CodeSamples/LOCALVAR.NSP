@@ -1,0 +1,15 @@
+DEFINE DATA LOCAL                                                       
+1 VAR1     (A15)                                                       
+1 VAR2                                                                 
+  2 VAR2A  (N4.1) INIT <1111>                                          
+  2 VAR2B  (N6.2) INIT <222222>                                        
+1 REDEFINE VAR2                                                        
+  2 VAR2C  (A2)                                                        
+  2 VAR2D  (A2)                                                        
+  2 VAR2E  (A6)                                                        
+END-DEFINE
+*                                                                       
+WRITE NOTITLE '=' VAR2A / '=' VAR2B /                                 
+              '=' VAR2C / '=' VAR2D / '=' VAR2E                      
+*                                                                       
+END
