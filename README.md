@@ -6,7 +6,7 @@ Adabas is the Comprehensive and scalable enterprise database management system o
 
 ## [Natural programming language](http://www2.softwareag.com/corporate/products/adabas_natural/natural/default.aspx)
 
-It is used in application development and deployment environment known for ease of-use, cross-platform portability and developer productivity. It is as well available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
+Natural is used in application development and deployment environment, known for ease of-use, cross-platform portability and developer productivity. It is as well available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
 ### Steps to using the virtual machine 
  * Download the Virtual machine image file from the TECHcommunity website
