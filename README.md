@@ -36,7 +36,8 @@ It is used in application development and deployment environment known for ease 
        * Usage of ESCAPE statement to interrupt the linear flow of execution and exit the loop
  
 ### To explore more code samples....
-  simply head over to the TECHcommunity... http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
+  Custom Public tutorials designed specially for beginners, available at the TechCommunity page of University Relations...http://techcommunity.softwareag.com/ecosystem/communities/public/universities/ 
+  For more... http://techcommunity.softwareag.com/ecosystem/communities/public/adanat/products/natural/codesamples/
  
 ### System Environment Requirement
 
