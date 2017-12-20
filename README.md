@@ -9,8 +9,8 @@ Adabas is the Comprehensive and scalable enterprise database management system o
 Natural is used in application development and deployment environment, known for ease of-use, cross-platform portability and developer productivity. It is as well available for mainframe, Linux®, UNIX® and Windows® (LUW) platforms.
 
 ### Steps to using the virtual machine 
- * Download the Virtual machine image file from the TECHcommunity website
- (http://techcommunity.softwareag.com/ecosystem/communities/protected/universities/student/ANEP/UR_ANEP_Externe_Links/ANEP_VM_1_0)
+ * Download the Virtual machine image file from the TECHcommunity website:  
+ http://techcommunity.softwareag.com/ecosystem/communities/protected/universities/student/ANEP/UR_ANEP_Externe_Links/ANEP_VM_1_0
  * Run the 'Adabas and Natural' cheatsheets from Help->cheatsheets menu
  * Tutorials :
  
