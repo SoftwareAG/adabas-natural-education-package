@@ -10,6 +10,7 @@ Natural is used in application development and deployment environment, known for
 
 ### Steps to using the virtual machine 
  * Download the Virtual machine image file from the TECHcommunity website
+ (http://techcommunity.softwareag.com/ecosystem/communities/protected/universities/student/ANEP/UR_ANEP_Externe_Links/ANEP_VM_1_0)
  * Run the 'Adabas and Natural' cheatsheets from Help->cheatsheets menu
  * Tutorials :
  
