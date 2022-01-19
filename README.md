@@ -55,8 +55,8 @@ This tutorial only serves the purpose of introducing the concept of Adabas and N
   ______________________
 These tools are provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.	
 _____________________
-For more information you can Ask a Question in the [TECHcommunity Forums](http://tech.forums.softwareag.com/techjforum/forums/list.page?product=adabas-&-natural).
+For more information you can Ask a Question in the [TECHcommunity Forums](https://tech.forums.softwareag.com/tags/c/forum/1/Adabas-Natural).
 
-You can find additional information in the [Software AG TECHcommunity](http://techcommunity.softwareag.com/home/-/product/name/adabas-&-natural).
+You can find additional information in the [Software AG TECHcommunity](https://tech.forums.softwareag.com/tag/Adabas-Natural).
 _____________________
 Contact us at [TECHcommunity](mailto:technologycommunity@softwareag.com?subject=Github/SoftwareAG) if you have any questions.
