@@ -1,3 +1,5 @@
+# Archived -- this repository is archived and currently not actively maintained
+
 ![alt text](https://cloud.githubusercontent.com/assets/25740455/25938714/7f4c321c-3630-11e7-9dca-db5877727731.jpg)
 
 ## [Adabas](http://www2.softwareag.com/corporate/products/adabas_natural/adabas/default.aspx)
